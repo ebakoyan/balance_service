@@ -13,7 +13,7 @@ let success = 0;
 let fail = 0;
 
 const start = async () => {
-  const promises = new Array(1000).fill(0).map(async () => {
+  const promises = new Array(10000).fill(0).map(async () => {
     try {
       const response = await fetch('http://localhost:5555/users/balance', options);
       if (response.ok) {
